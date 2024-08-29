@@ -56,7 +56,7 @@ const addNewDivs = (color, flash, timer, borderWidth, opacity) => {
   bottomDiv.style.bottom = '0';
 
   divs.forEach((div) => {
-    document.body.appendChild(div);
+    document.body.parentElement.appendChild(div);
     if (flash === 'flash') {
       div.classList.add('urlColorAnimate');
     }
